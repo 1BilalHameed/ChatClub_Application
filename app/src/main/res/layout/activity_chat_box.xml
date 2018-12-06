@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ChatBox">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/myRecyclerViewTwo"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+    </android.support.v7.widget.RecyclerView>
+    <ImageView
+        android:layout_width="200dp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:id="@+id/imageDisplayer"
+        android:layout_height="200dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#605e5e"
+        android:layout_height="2dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="0dp"
+            android:id="@+id/userPostEd"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/edittext_custom_style"
+            android:hint="Your Message.."
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_marginEnd="5dp"
+            android:id="@+id/uploadImageIcon"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/iconcamera"
+            android:layout_height="40dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="SEND"
+            android:id="@+id/btnSend"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/buttons_custom_style"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
